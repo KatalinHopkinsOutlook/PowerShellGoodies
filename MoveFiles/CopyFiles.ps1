@@ -13,7 +13,9 @@ C:\GitHub\PowerShellGoodies\MoveFiles\CopyFiles.ps1
 
 using namespace System.Collections.Generic
 
-#cmdkey /add:10.20.30 /user:10.20.30\katalinhopkins /pass:Cogito@rgo5um
+<#
+cmdkey /add:10.20.30 /user:10.20.30\katalinhopkins /pass:Cogito@rgo5um
+#>
 
 $FileName = ""
 
@@ -78,7 +80,7 @@ $TableName = 'FilesTable'
 #$Source =""
 #$Source =""
 #$Source =""
-$Source ="C:\GitHub\PowerShellGoodies"
+#$Source ="C:\GitHub\PowerShellGoodies"
 
 <#
 #$Source="D:\Users\Katal\OneDrive\Desktop"
@@ -101,7 +103,7 @@ $Source="D:\Users\Katal\OneDrive\Videos"
 $Source="\\DS224\MS-Surface-E6F1US5\Documents"
 #>
 
-
+$Source = "\\DS224\Documents\Professional"
 
 #$Destination = "D:\Users\Katal\OneDrive"
 #$Destination = "\\DS224\Documents"
@@ -109,7 +111,9 @@ $Source="\\DS224\MS-Surface-E6F1US5\Documents"
 #$Destination = "\\DS224\MS-Surface-E6F1US5"
 #$Destination = ""
 #$Source ="C:\Users\katal\source\repos\PowerShellGoodies"
-$Destination = "C:\Users\katal\source\repos"
+#$Destination = "C:\Users\katal\source\repos"
+$Destination = "D:\Users\Katal\OneDrive\Documents"
+
 
 $ScriptLocation = Get-Location
 	$ScriptPath = $ScriptLocation.Path
